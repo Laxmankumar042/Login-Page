@@ -1,0 +1,116 @@
+:root{
+   --color : #f55f02;
+   --hover-color : #ae4706;; 
+}
+*{
+   font-family: sans-serif;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   color: white;
+   text-decoration: none;
+}
+body{
+   background-image: linear-gradient(to top right, rgb(254, 76, 76), rgb(254, 179, 38));
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+}
+#box{
+   width: 300px;
+   height: 400px;
+   background-color: rgb(32, 31, 31);
+   border-radius: 10px;
+   padding: 33px;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   position: absolute;
+   box-shadow: inset 5px 5px 50px black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+}
+.box-2{
+   position: absolute;
+   width: 310px;
+   height: 410px;
+   background-color: #3c3c3ced;
+   z-index: -1;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   border-radius: 12px;
+   overflow: hidden;
+}
+.rotate-div{
+   background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(71, 232, 232), rgb(36, 36, 207));
+   width: 500px;
+   height: 100px;
+   animation: rotate 2s linear infinite;
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   translate: -50% -50%;
+}
+@keyframes rotate{
+   100%{
+      rotate: 360deg;
+   }
+}
+
+h2{
+   font-size: 30px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+.input-box{
+   width: 200px;
+   height: 32px;
+   border-radius: 5px;
+   margin-top: 5px;
+   text-align: left;
+   padding-left: 10px;
+   color: black;
+   border: none;
+   box-shadow: 2px 2px 10px #000;
+}
+.input-box:focus{
+   outline: 2px solid var(--color);
+   text-align: center;
+}
+.forgot-text{
+   text-align: left;
+}
+.forgot-text a{
+   color: var(--color);
+   letter-spacing: 2px;
+}
+.forgot-text a:hover{
+   color: var(--hover-color);
+}
+.login-button{
+   background-color: var(--color);
+   padding: 8px 60px;
+   border-radius: 5px;
+   transition: background-color 0.2s linear;
+}
+.login-button {
+   color: black;
+}
+.login-button:hover{
+   background-color: rgb(218, 58, 0);;
+}
+.signup-text{
+   color: var(--color);
+   letter-spacing: 2px;
+}
+.signup-text:hover{
+   color: var(--hover-color);
+}
+.signup-text
+span{
+   letter-spacing: 1.05px;
+}
